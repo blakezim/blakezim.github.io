@@ -2,14 +2,6 @@
     min-height: 0em;
     background-color: #3E5779;
 }
-    #project_header > .content {
-        padding: 2em 0em 1em 3em ;
-        width: 60em;
-    }
-    #project_header p {
-        font-size: 1.0em;
-        color: rgba(255, 255, 255, 0.733);
-    }
 
 #custom_footer {
         min-height: 0em;
@@ -17,16 +9,18 @@
     }
     #custom_footer > .inner {
         padding: 3em 0em 0.5em 20em ;
-        width: 60em;
+        width: 50em;
     }
+
 #custom_footer_gen {
     min-height: 0em;
     background-color: #3E5779;
 }
     #custom_footer_gen > .inner {
         padding: 1.5em 0em 0.5em 3em ;
-        width: 80em;
+        width: 50em;
     }
+    
 
 /* Intro */
 #custom_intro {
