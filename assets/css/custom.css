@@ -41,6 +41,9 @@
                 font-size: 1em;
                 color: #000000;
             }
+            #custom_intro p br {
+                display: none;
+            }
 
         }
 
