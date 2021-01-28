@@ -24,7 +24,7 @@
 						<li><a href="mrreg.html">MR to Histology</a></li>
 						<li><a href="camp.html">CAMP</a></li>
 						<li><a href="ute.html">UTE to CT</a></li>
-						<li><a href="mfa.html">MFA T1</a></li>
+						<!-- <li><a href="mfa.html">MFA T1</a></li> -->
 						<li><a href="mpmr.html" class="active">Multi-Parametric</a></li>
 						<li><a href="lung.html">Lung Motion</a></li>
 					</ul>
@@ -37,7 +37,7 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">Multi-Parametric MR Predictions</h1>
+							<h1 class="major">Multi-Parametric MR Treatment Assessment</h1>
 							<h3>
 								<a href="../index.html">Blake E. Zimmerman</a>, 
 								<a href="https://www.researchgate.net/profile/Sara_Johnson26" target="_blank">Sara L. Johnson</a>,     
@@ -54,7 +54,24 @@
 									<div class="col-6"><span class="image fit"><img src="../images/MPMR_results.jpg" alt="" /></span></div>
 								</div>
 							</div>
-							<p> Insert Fancy Text Here</p>
+							<p> Magnetic resonance (MR) guided focused ultrasound (MRgFUS) ablation procedures are promising treatments to replace surgical intervention for localized cancers. 
+								A substantial limitation for non-invasive MRgFUS treatments is the uncertainty in assessment of the treated tissue immediately after ablation. 
+								If untreated tumor is detected during MR assessment, treatment could continue immediately until the entire tumor is treated.
+								However, the most accurate method to determine the treated tissue following MRgFUS ablations is histological analysis through surgical resection. 
+								In order to entirely replace surgical intervention, MR assessment images need to accurately distinguish treated from untreated tissue immediately following treatment in comparison to the treated tissue measured with histology.
+								<!-- The most commonly used, and most accurate, acute clinical MR assessment is the non-perfused volume (NPV) measured on contrast-enhanced T1-weighted imaging.  -->
+								<!-- Although currently the most accurate metric, the NPV has been shown to over-estimate the treated tissue compared to histology.  -->
+								<!-- Additionally, the necessary introduction of contrast agents prevents immediately continuing treatment if viable tumor is detected.  -->
+								The clinical, non-contrast MR metric for determining the treated tissue is the cumulative thermal dose (CTD) calculated from MR temperature imaging.
+								However, CTD has been shown to under-estimate the treated volume when compared to histology. 
+								There is a need for more accurate predictions of the treated tissue from MR imaging compared to histology. 
+								This work incorporates a novel histology derived label (according to <a href="mrreg.html">MR to Histology Registration Workflow</a>) of treated tissue to train three supervised machine learning classifiers to predict the treated tissue from multi-parametric MR (MPMR - left image) images following MRgFUS ablation. 
+								The trained classification models generalized between subjects and performed significantly better than the clinical CTD model, improving the average precision, recall, and dice score from 0.12 to 0.56, 0.25 to 0.74, and 0.16 to 0.61, respectively, for one of the classifier models (right image). 
+								<!-- There was no significant difference in the classifier model predictions and the clinical NPV prediction.  -->
+								The results show that additional MPMR contrast information is capable of improving MR treatment predictions without contrast agents, even when CTD over-or under-estimates lesion formation.
+								This work demonstrates the feasibility of MPMR imaging to improve non-contrast predictions of treated tissue following MRgFUS ablations. 
+								The ability to assess MRgFUS ablation without contrast immediately after treatment allow treatment to continue if viable tumor is detected, increasing the efficacy of MRgFUS ablations for localized cancer. 
+							</p>
 						</div>
 					</section>
 

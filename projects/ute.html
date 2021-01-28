@@ -24,7 +24,7 @@
 						<li><a href="mrreg.html">MR to Histology</a></li>
 						<li><a href="camp.html">CAMP</a></li>
 						<li><a href="ute.html" class="active">UTE to CT</a></li>
-						<li><a href="mfa.html">MFA T1</a></li>
+						<!-- <li><a href="mfa.html">MFA T1</a></li> -->
 						<li><a href="mpmr.html">Multi-Parametric</a></li>
 						<li><a href="lung.html">Lung Motion</a></li>
 					</ul>
@@ -39,8 +39,12 @@
 						<div class="inner">
 							<h1 class="major">UTE to CT Image Contrast Conversion</h1>
 							<h3>
-								<a href="https://medicine.utah.edu/faculty/mddetail.php?facultyID=u0682009" target="_blank">Henrik A. Od&eacute;en</a> and 
-								<a href="../index.html">Blake E. Zimmerman</a> 
+								<a href="https://medicine.utah.edu/faculty/mddetail.php?facultyID=u0682009" target="_blank">Henrik A. Od&eacute;en</a>,
+								<a href="../index.html">Blake E. Zimmerman</a>,
+								<a href="https://www.sci.utah.edu/people/sjoshi.html" target="_blank">Sarang C. Joshi</a>,
+								<a href="https://scholar.google.com/citations?user=9_0odKsAAAAJ&hl=en" target="_blank">Dennis L. Parker</a>,
+								<a href="https://healthcare.utah.edu/fad/mddetail.php?physicianID=u6013267&name=matthew-d-alexander" target="_blank">Matthew D. Alexander</a>, and
+								<a href="https://healthcare.utah.edu/fad/mddetail.php?physicianID=u6011886&name=john-d-rolston" target="_blank">John D. Rolston</a>
 							</h3>
 							<div class="box alt">
 								<div class="row gtr-uniform">
@@ -54,7 +58,14 @@
 									<div class="col-12"><span class="image fit"><img src="../images/unet.png" alt="" /></span></div>
 								</div>
 							</div>
-							<p> Insert Fancy Text Here</p>
+							<p> This project aims to improve patient experience and safety, and reduce the cost of transcranial FUS treatments by replacing the CT scan with an ultrashort echo time (UTE) MRI scan and deep learning. 
+								A CT scan is required for patient screening before, and for phase aberration correction during, transcranial FUS treatments. 
+								The CT scan is often performed on a different day than the FUS treatment, resulting in multiple visits and decreased patient experience, in addition to the negative effects associated with ionizing radiation. 
+								UTE MRI can achieve positive bone contrast, and we show that UTE MRI can create pseudo-CT images which can be used for patient screening and phase aberration correction. 
+								Deep learning, specifically a <a href="https://arxiv.org/abs/1505.04597">U-Net</a> inspired convolutional neural network (bottom image), can be used to convert the UTE MR images (upper left image) to a pseudo-CT image (upper right image) to eliminate the need for CT image acquisition.
+								This framework would remove the need for an entire pre-treatment CT session, reducing the time and radiation burden on the patient. 
+								This work is a piece of a grant submitted by <a href="https://medicine.utah.edu/faculty/mddetail.php?facultyID=u0682009" target="_blank">Henrik A. Od&eacute;en</a> to the Focused Ultrasound Foundation.
+							</p>
 						</div>
 					</section>
 
