@@ -72,6 +72,12 @@
     width: 10% !important;
 }
 
+a:link {
+  color: #FFFFFF;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 /* .custom_wrapper {
     position: relative;
 }
