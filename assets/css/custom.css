@@ -1,45 +1,70 @@
 #project_header {
     min-height: 0em;
-    background-color: #3E5779;
+    background-color: #292929;
 }
 
 #custom_footer {
         min-height: 0em;
-        background-color: #3E5779;
+        background-color: #454545;
     }
 
 #custom_footer_gen {
     min-height: 0em;
-    background-color: #3E5779;
+    background-color: #454545;
 }
 
 
 /* Intro */
 #custom_intro {
-    background-attachment: fixed;
-    background-image: url("images/ice_climbing_gradient.jpg");
-    background-position: left 0 top 0;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
+    background: none;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
     -moz-justify-content: flex-start;
     -webkit-justify-content: flex-start;
     -ms-justify-content: flex-start;
     justify-content: flex-start;
-    color: #000000;
 }
+
+#custom_intro::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/futuresurgery_static_cropped.png");
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    -ms-justify-content: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+    #custom_intro .inner {
+        margin: 1em 0 0 4em;
+        padding: 0;
+    }
     #custom_intro h1 {
-        color: #000000;
+        color: #aeaeae;
+        font-size: 3em;
+        margin-bottom: 0.5em;
     }
     #custom_intro p {
-        font-size: 1.25em;
-        color: #000000;
+        font-size: 1.5em;
+        color: #aeaeae;
+        opacity: 0.5;
     }
 
         @media screen and (max-width: 736px) {
 
             #custom_intro p {
-                font-size: 1em;
-                color: #000000;
+                font-size: 1.2em;
+                color: #FFFFFF;
             }
             #custom_intro p br {
                 display: none;
@@ -51,20 +76,64 @@
 
         #custom_intro {
             background-attachment: scroll;
-            color: #000000;
+            color: #FFFFFF;
         }
 
     }
 
-#cust_img {
-    /* border-radius: 0.25em;
-    border: 0;
-    display: inline-block; */
-    /* position: relative; */
-    float: left;
-    margin: 2em 2em 2em 0;
-    width: 30% !important;
+.about-container {
+    display: flex;
+    gap: 2em;
+    align-items: stretch;
+    margin-bottom: 2em;
 }
+
+.about-content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image {
+    flex: 0 0 25%;
+    display: flex;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 0.25em;
+    object-fit: contain;
+}
+
+.features {
+    margin-top: 2em;
+    width: 100%;
+}
+
+@media screen and (max-width: 980px) {
+    .about-container {
+        flex-direction: column;
+    }
+    
+    .about-image {
+        flex: 0 0 auto;
+        max-height: 400px;
+        width: 100%;
+    }
+
+    .about-image img {
+        max-height: 400px;
+        object-fit: contain;
+    }
+}
+
 
 #cust_portrait {
     float: right;
@@ -77,60 +146,3 @@ a:link {
   background-color: transparent;
   text-decoration: none;
 }
-
-/* .custom_wrapper {
-    position: relative;
-}
-
-    .custom_wrapper > .inner {
-        padding: 5em 5em 3em 5em ;
-        max-width: 100%;
-        width: 75em;
-    }
-
-        @media screen and (max-width: 1680px) {
-
-            .custom_wrapper > .inner {
-                padding: 4em 4em 2em 4em ;
-            }
-
-        }
-
-        @media screen and (max-width: 1280px) {
-
-            .custom_wrapper > .inner {
-                width: 100%;
-            }
-
-        }
-
-        @media screen and (max-width: 736px) {
-
-            .custom_wrapper > .inner {
-                padding: 3em 2em 1em 2em ;
-            }
-
-        }
-        .custom_wrapper > .inner > .major {
-			margin: 0 0 1.3em 0;
-			position: relative;
-			padding-bottom: 0.35em;
-		}
-
-            .inner > .major:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
-				-moz-transition: max-width 0.2s ease;
-				-webkit-transition: max-width 0.2s ease;
-				-ms-transition: max-width 0.2s ease;
-				transition: max-width 0.2s ease;
-				border-radius: 0.2em;
-				bottom: 0;
-				content: '';
-				height: 0.05em;
-				position: absolute;
-				right: 0;
-				width: 100%;
-			} */
